@@ -150,11 +150,12 @@ body {
 
 .image1 {
     width: clamp(200px, 25vw, 280px);
-    height: clamp(150px, 20vw, 220px);
-    object-fit: cover;
+    height: clamp(170px, 22vw, 240px);
+    object-fit: contain;
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
+    background-color: #f8f9fa;
 }
 
 .image1:hover {
@@ -198,10 +199,12 @@ body {
 /* Product images */
 .image1 {
     width: clamp(200px, 25vw, 300px);
-    height: clamp(150px, 20vw, 250px);
+    height: clamp(170px, 22vw, 270px);
     display: block;
     margin: 0 auto clamp(20px, 3vw, 30px);
-    object-fit: cover;
+    object-fit: contain;
+    background-color: #f8f9fa;
+    border-radius: 15px;
 }
 
 .heading1 {
@@ -370,12 +373,13 @@ body {
 .product-image {
     width: 100%;
     max-width: clamp(150px, 20vw, 200px);
-    height: clamp(120px, 18vw, 160px);
-    object-fit: cover;
+    height: clamp(140px, 20vw, 180px);
+    object-fit: contain;
     border-radius: 15px;
     margin: 0 auto clamp(15px, 2vw, 20px);
     display: block;
     transition: transform 0.3s ease;
+    background-color: #f8f9fa;
 }
 
 .product-card:hover .product-image {
