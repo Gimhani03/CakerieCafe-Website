@@ -1,0 +1,203 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.image {
+    background-image: url("../assets/Cupcake.JPG");
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    width: 100%;
+    position: relative;
+}
+
+.logo {
+    width: clamp(60px, 6vw, 81px);
+    margin-left: 1%;
+    display: block;
+}
+
+/* Navigation */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;
+    flex-wrap: wrap;
+}
+
+.list1 {
+    list-style: none;
+    display: flex;
+    gap: clamp(20px, 4vw, 65px);
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+
+.item1 {
+    color: black;
+    font-size: clamp(12px, 1.2vw, 15px);
+    font-weight: bold;
+    border-radius: 13px;
+    background-color: antiquewhite;
+    width: clamp(70px, 8vw, 90px);
+    height: clamp(24px, 3vw, 28px);
+    border: 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.list2 {
+    list-style: none;
+    margin: 0;
+}
+
+.item2 {
+    color: black;
+    font-size: clamp(12px, 1.2vw, 15px);
+    font-weight: bold;
+    border-radius: 13px;
+    background-color: rgb(159, 157, 158);
+    width: clamp(90px, 10vw, 110px);
+    height: clamp(24px, 3vw, 28px);
+    border: 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Content Container */
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(20px, 3vw, 40px);
+    text-align: center;
+}
+
+/* Home Page Content Styles */
+.topic {
+    font-size: clamp(60px, 8vw, 100px);
+    margin-top: clamp(20px, 3vw, 34px);
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.solgan {
+    font-size: clamp(18px, 2.5vw, 24px);
+    margin: clamp(10px, 2vw, 20px) 0;
+    font-style: italic;
+    color: #333;
+}
+
+.topic1 {
+    font-size: clamp(20px, 2.8vw, 28px);
+    margin: clamp(15px, 2vw, 25px) 0;
+    font-weight: bold;
+    color: #444;
+}
+
+.topic2 {
+    font-size: clamp(16px, 2.2vw, 22px);
+    margin: clamp(10px, 1.5vw, 20px) 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Footer styling */
+.footer {
+    width: 100%;
+    background-color: blanchedalmond;
+    padding: clamp(20px, 3vw, 30px);
+    margin-top: auto;
+    overflow-x: auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(20px, 3vw, 30px);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    font-size: clamp(16px, 1.8vw, 20px);
+    margin-bottom: clamp(10px, 1.5vw, 15px);
+    color: #333;
+}
+
+.footer-section p {
+    font-size: clamp(12px, 1.4vw, 16px);
+    margin-bottom: clamp(5px, 1vw, 8px);
+    color: #555;
+}
+
+.social-section {
+    margin-top: clamp(10px, 1.5vw, 15px);
+}
+
+.slogo {
+    height: clamp(30px, 4vw, 50px);
+    width: auto;
+    max-width: 100px;
+}
+
+/* Link styling */
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.h1:hover, .h2:hover, .h3:hover, .h4:hover, .h5:hover, .h6:hover {
+    color: #555;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 1200px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .list1 {
+        justify-content: center;
+        gap: clamp(10px, 2vw, 30px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-container {
+        padding: 10px 2%;
+    }
+    
+    .list1 {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .item1, .item2 {
+        margin: 2px;
+        min-width: 60px;
+    }
+    
+    .footer {
+        padding: 15px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
