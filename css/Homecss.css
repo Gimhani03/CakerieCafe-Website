@@ -9,13 +9,16 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 100%;
     overflow-x: auto;
+    margin: 0;
+    padding: 0;
 }
 
-.image {
+.main-content {
     background-image: url("../assets/Cupcake.JPG");
     background-size: cover;
     min-height: 100vh;
     background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
     position: relative;
 }
