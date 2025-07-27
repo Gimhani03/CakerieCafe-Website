@@ -22,102 +22,78 @@
                 <button class="item2">Search here</button>
             </nav>
         </div>
-<p align="center" class="topic"><b>CONTACT US</b></p>
-
-
-
-<div class="box1">
-    <table class="a7">
-        <tr>
-            <td class="content1"><p><p align="center" class="c1"><b>Feel Free To Contact<br>&nbsp;&nbsp;&nbsp;&nbsp;    Us Anytime</b></p></p></td>
-            <td><p align="center" class="c2"><b>Tell Us Your Problem</b></p>
-            
-                <table>
-                    <tr>
-                        <td><font class="c3">&nbsp;&nbsp;  <b>Name*</b></font></td>
-                    </tr>
-                    <tr>
-                        <form action="" method="POST">
-                        <td>&nbsp;&nbsp;    <input type="text" class="box2" placeholder="First Name...."></td>
-                        <td>&nbsp;&nbsp;    <input type="text" class="box3" placeholder="Last Name...."></td>
-                        </form>
-                    </tr>
-                    
-                </table>
+    <div class="contact-container">
+        <h1 class="page-title">CONTACT US</h1>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <h2>Feel Free To Contact Us Anytime</h2>
                 
-            </td>
-        </tr>
-        <tr>
-            <td align="center"><font class="a3">inquiry@cakeriecafecupcake.com</font></td>
-             
-            <td>&nbsp;&nbsp;    (This field cannot contain numbers or symbols)</td>  
-        </tr>
-        <tr></tr><tr></tr>
-        <tr>
-            <td rowspan="4" align="center"><font class="c4">North America: +1-877-334-9468</font><br>
-            <font class="a1">Outside of North America:</font><br>
-            <font class="a8">+001-647-478-9464</font><br>
-            <font class="a2">CakerieCafe , GTA: 647-478-9464</font>
-            </td>
-            <td>&nbsp;&nbsp;    <b>Work Email*</b></td>
-        </tr>
-
-        <tr>
-            <td>&nbsp;&nbsp;    <input type="text" class="box3" placeholder="Work Email...."></td>
+                <div class="info-section">
+                    <h3>Email</h3>
+                    <p>inquiry@cakeriecafecupcake.com</p>
+                </div>
+                
+                <div class="info-section">
+                    <h3>Phone Numbers</h3>
+                    <p>North America: +1-877-334-9468</p>
+                    <p>Outside of North America: +001-647-478-9464</p>
+                    <p>CakerieCafe, GTA: 647-478-9464</p>
+                </div>
+                
+                <div class="info-section">
+                    <h3>Address</h3>
+                    <p>Queen St E & Lee Ave,</p>
+                    <p>CakerieCafe, ON M4E 1E5</p>
+                </div>
+                
+                <div class="info-section">
+                    <h3>Follow Us On Social Media</h3>
+                    <img src="../assets/SocialLogo.png" class="social-logo" alt="Social Media">
+                </div>
+            </div>
             
-        </tr>
-
-        <tr>
-            <td>&nbsp;&nbsp;      (This field cannot contain numbers or symbols)</td>
-        </tr>
-
-        <tr></tr>
-        <tr></tr>
-        <tr>
-            <td></td>
-            <td>&nbsp;&nbsp;    <b>Work Phone number*</b></td>
-        </tr>
-        <tr>
-            <td rowspan="2"><font class="a4">Queen St E & Lee Ave,</font><br>
-            <font class="a5">CakerieCafe, ON M4E 1E5</font></td>
-            <td>&nbsp;&nbsp;    <input type="text" class="box4" placeholder="Work Phone number..."></td>
-            
-        </tr> 
-            <td>&nbsp;&nbsp;    (Phone number must be contain at least 10 digits)</td>
-        </tr>
-        <tr></tr><tr></tr>
-        <tr>
-            <td></td>
-            <td>&nbsp;&nbsp;    <b>How can we help?</b></td>
-        </tr>
-        
-        <tr>
-            <th><font class="a6">Follow Us On Social Media:</font></th>
-            <td>&nbsp;&nbsp;    <input type="text" class="box5" placeholder="Tell us more...">
-            </td>
-        </tr>
-        
-        <tr></tr>
-        <tr>
-            <td><p><img src="../assets/SocialLogo.png" class="image1"></p></td>
-            
-            <td><br>&nbsp;&nbsp;    <input type="submit" class="box6" value="Submit"></td>
-            <td><br><input type="button" class="box7" value="Clear"></td>
-            
-        </tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr>
-            
-        </tr>
-        
-
-    </table>
-</div>
-
-
-<br><br><br>
+            <div class="contact-form">
+                <h2>Tell Us Your Problem</h2>
+                
+                <form action="" method="POST" class="modern-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name*</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="First Name..." required>
+                            <small class="form-note">This field cannot contain numbers or symbols</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name*</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Last Name..." required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Work Email*</label>
+                        <input type="email" id="email" name="email" placeholder="Work Email..." required>
+                        <small class="form-note">Please enter a valid email address</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Work Phone Number*</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Work Phone number..." required>
+                        <small class="form-note">Phone number must contain at least 10 digits</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">How can we help?</label>
+                        <textarea id="message" name="message" placeholder="Tell us more..." rows="5"></textarea>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <button type="submit" class="btn-submit">Submit</button>
+                        <button type="reset" class="btn-clear">Clear</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     </div>
 
 <footer class="footer">
